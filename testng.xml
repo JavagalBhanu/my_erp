@@ -1,0 +1,9 @@
+<!-- Ensure that all test classes are independent -->
+<suite name="Suite">
+  <test name="Test">
+    <packages>
+    <package name="scripts"/>
+    </packages>
+  </test>
+</suite>
+<!-- if there is any dependency put them under same class -->
