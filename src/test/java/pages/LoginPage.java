@@ -18,6 +18,9 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath="//div[text()='Login ']")
 	private WebElement loginBTN;
 	
+	@FindBy(xpath="//span[contains(text(),'invalid')]")
+	private WebElement errMsg;
+	
 	public LoginPage(WebDriver driver){
 		super(driver);
 	}
@@ -34,8 +37,13 @@ public class LoginPage extends BasePage{
 		loginBTN.click();
 	}
 	
-	public boolean verifyLoginPageIsDisplayed(String eTitle,long ToIS) 
+	public boolean verifyLoginPageIsDisplayed(String eTitle) 
 	{
-		return verifyTitle(eTitle,ToIS);
+		return verifyTitle(eTitle);
+	}
+	
+	public boolean verifyErrMsgDisplayed()
+	{
+		return  verifyElementDisplayed(errMsg);
 	}
 }

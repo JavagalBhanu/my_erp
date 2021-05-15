@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19280" started-at="2021-05-15T14:26:18Z" finished-at="2021-05-15T14:26:37Z">
+  <suite name="Default suite" duration-ms="17934" started-at="2021-05-15T15:06:26Z" finished-at="2021-05-15T15:06:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19280" started-at="2021-05-15T14:26:18Z" finished-at="2021-05-15T14:26:37Z">
-      <class name="scripts.ValidLogin">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:scripts.ValidLogin@5abca1e0]" name="preCondition" is-config="true" duration-ms="13394" started-at="2021-05-15T14:26:18Z" finished-at="2021-05-15T14:26:31Z">
+    <test name="Default test" duration-ms="17934" started-at="2021-05-15T15:06:26Z" finished-at="2021-05-15T15:06:44Z">
+      <class name="scripts.InvalidLogin">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:scripts.InvalidLogin@1dfe2924]" name="preCondition" is-config="true" duration-ms="14327" started-at="2021-05-15T15:06:26Z" finished-at="2021-05-15T15:06:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:scripts.ValidLogin@5abca1e0]" name="testValidLogin" duration-ms="5710" started-at="2021-05-15T14:26:31Z" finished-at="2021-05-15T14:26:37Z">
+        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:scripts.InvalidLogin@1dfe2924]" name="testInvalidLogin" duration-ms="3384" started-at="2021-05-15T15:06:40Z" finished-at="2021-05-15T15:06:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:scripts.ValidLogin@5abca1e0]" name="postCondition" is-config="true" duration-ms="138" started-at="2021-05-15T14:26:37Z" finished-at="2021-05-15T14:26:37Z">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:scripts.InvalidLogin@1dfe2924]" name="postCondition" is-config="true" duration-ms="167" started-at="2021-05-15T15:06:44Z" finished-at="2021-05-15T15:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- scripts.ValidLogin -->
+      </class> <!-- scripts.InvalidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

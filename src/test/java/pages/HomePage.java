@@ -10,8 +10,8 @@ public class HomePage extends BasePage{
 		super(driver);
 	}
 	
-	public boolean verifyHomePageIsDisplayed(String eTitle,long ToIS) {
-		return verifyTitle(eTitle,ToIS);
+	public boolean verifyHomePageIsDisplayed(String eTitle) {
+		return verifyTitle(eTitle);
 	}
 	
 }

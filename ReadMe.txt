@@ -51,6 +51,18 @@ manual testcase id/name
 5. Inside test method specify test case steps as comment
 6. for each step call respective pom class method
 7. take the required input from excel file
+----------------------------------Test Case 2----------------------------------
+1. enter invalid user name
+2. enter invalid password
+3. click login
+4. verify err msg is dispalyed
+Execute Test Case manually and note down page,elements & actions
+loginpage un enter
+loginpage pw enter
+loginpage login click
+loginpage  errmsg verifyDisplayed
+
+
 
 
 

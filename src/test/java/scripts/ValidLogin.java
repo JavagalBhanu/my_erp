@@ -14,6 +14,7 @@ public class ValidLogin extends BaseTest
 	public void testValidLogin()
 	{
 		//Reading data from excel
+
 		String un=ExcelUtil.getData(XL_PATH,"ValidLogin",1,0);
 		String pw=ExcelUtil.getData(XL_PATH,"ValidLogin",1, 1);
 		String eTitle=ExcelUtil.getData(XL_PATH,"ValidLogin",1,2);
@@ -31,7 +32,7 @@ public class ValidLogin extends BaseTest
 		
 //		4. verify that Home page is displayed
 		HomePage homePage=new HomePage(driver);
-		boolean pageDisplayed = homePage.verifyHomePageIsDisplayed(eTitle,ETO);
+		boolean pageDisplayed = homePage.verifyHomePageIsDisplayed(eTitle);
 		Assert.assertTrue(pageDisplayed,msg);
 	}
 }

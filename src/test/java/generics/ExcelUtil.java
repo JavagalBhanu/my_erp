@@ -15,8 +15,9 @@ public abstract class ExcelUtil
   public static String getData(String path,String sheet,int r,int c)
   {
 	  String value="";
-	  try(Workbook wb=WorkbookFactory.create(new FileInputStream(path)))
+	  try
 	  {
+		  Workbook wb=WorkbookFactory.create(new FileInputStream(path));
 		  value=wb.getSheet(sheet).getRow(r).getCell(c).getStringCellValue();
 	  }
 	  catch (Exception e) 
