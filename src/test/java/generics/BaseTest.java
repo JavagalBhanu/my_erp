@@ -18,7 +18,7 @@ public class BaseTest implements IAutoConst
 	{
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(TIMEOUT,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 		driver.get(APP_URL);
 	}
 	@AfterMethod
