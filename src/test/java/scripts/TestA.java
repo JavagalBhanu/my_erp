@@ -12,6 +12,5 @@ public class TestA extends BaseTest
 	public void testA()
 	{
 		Reporter.log("testA...",true);
-
 	}
 }
