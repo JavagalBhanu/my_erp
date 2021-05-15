@@ -42,7 +42,15 @@ add respective elements and actions(method) into the POM class
 To handle common method use inheritance .i.e create BasePage class and extend it by
 all the pom class
 
-
+Process to develop Test Class
+1. Number of Test Class should be same as number of manual Test cases
+2. Test Class should be created under script package with name same as
+manual testcase id/name
+3. every test class should extended BaseTest class
+4. Test Class should contain Test Method
+5. Inside test method specify test case steps as comment
+6. for each step call respective pom class method
+7. take the required input from excel file
 
 
 

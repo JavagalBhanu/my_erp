@@ -26,6 +26,7 @@ public abstract class BasePage
 		}
 		catch (Exception e) 
 		{
+			e.printStackTrace();
 			return false;//page is not displayed
 		}
 	}
