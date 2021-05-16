@@ -1,6 +1,19 @@
 <!-- Ensure that all test classes are independent -->
-<suite name="Suite">
-  <test name="Test">
+<suite name="RegressionSuite" parallel="tests">
+  <test name="GCTest">
+  <parameters>
+  <parameter name="url" value="http://127.0.0.1:4444/wd/hub"/>
+  <parameter name="browser" value="chrome"/>
+  </parameters>
+    <packages>
+    <package name="scripts"/>
+    </packages>
+  </test>
+   <test name="FFTest">
+  <parameters>
+  <parameter name="url" value="http://127.0.0.1:4444/wd/hub"/>
+  <parameter name="browser" value="firefox"/>
+  </parameters>
     <packages>
     <package name="scripts"/>
     </packages>
